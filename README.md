@@ -2,6 +2,8 @@
 
 Live arrivals at your bus stop on a Home Assistant dashboard: the next bus in big numbers, the one after it, and the route map with the buses moving along it. The card comes from [My Bus Stop](https://amirhayek.dev/MyBusStop/), a free transit app, and runs its [web version](https://amirhayek.dev/MyBusStop/web/) inside the card.
 
+![The My Bus Stop card on a dashboard: the route map with the stops before yours, the next bus in 2 minutes and the one after in 15](images/card.jpg)
+
 - **Free.** You don't need an account or an API key.
 - **Set up in the card editor.** Pick your region, search for your stop (or find stops near you) and choose up to three lines.
 - **Follows your dashboard's theme.** The card is light or dark to match the dashboard, or you can fix it to one.
