@@ -22,6 +22,8 @@ Anywhere else, arrival times come from [Transitous](https://transitous.org/), a 
 
 ## Install
 
+A step-by-step guide with more detail is at [amirhayek.dev/MyBusStop/home-assistant](https://amirhayek.dev/MyBusStop/home-assistant/).
+
 ### With HACS (recommended)
 
 1. Click the button above. Or open **HACS** in Home Assistant, go to the **⋮** menu and choose **Custom repositories**, add `https://github.com/hayek/my-bus-stop-card` with the type **Dashboard**, then search for **My Bus Stop**.
