@@ -10,7 +10,7 @@
  * MIT licence. https://github.com/hayek/my-bus-stop-card
  */
 
-const CARD_VERSION = '1.0.0';
+const CARD_VERSION = '1.0.1';
 const SITE = 'https://amirhayek.dev/MyBusStop/web/';
 const SITE_ORIGIN = new URL(SITE).origin;
 const BOARD_PATTERN = /^[jz][A-Za-z0-9_-]{8,8000}$/;
