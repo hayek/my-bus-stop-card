@@ -1,0 +1,6 @@
+{
+  "name": "My Bus Stop",
+  "filename": "my-bus-stop-card.js",
+  "render_readme": true,
+  "homeassistant": "2024.11.0"
+}
