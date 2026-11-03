@@ -45,7 +45,7 @@ To show more stops, add one card per stop.
 | `board` | none | The stop and lines to show. The editor fills this in for you. |
 | `url` | none | Instead of `board`: a link from **Copy link to this board** in the web version's ⚙ menu. |
 | `theme` | `auto` | `auto` matches the dashboard. `light` and `dark` fix the theme. `system` follows the device. |
-| `height` | `480` | Card height in pixels, for masonry and stack layouts. In a sections or panel view, the card fills the space it's given instead. |
+| `height` | `540` | Card height in pixels, for masonry and stack layouts. In a sections or panel view, the card fills the space it's given instead. |
 
 Set up from YAML, using a link copied from the web version:
 

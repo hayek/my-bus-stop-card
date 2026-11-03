@@ -14,7 +14,7 @@ const CARD_VERSION = '1.0.0';
 const SITE = 'https://amirhayek.dev/MyBusStop/web/';
 const SITE_ORIGIN = new URL(SITE).origin;
 const BOARD_PATTERN = /^[jz][A-Za-z0-9_-]{8,8000}$/;
-const DEFAULT_HEIGHT = 480;
+const DEFAULT_HEIGHT = 540;
 const THEMES = ['auto', 'light', 'dark', 'system'];
 
 /** The board from a card's settings: `board`, or the `#b=` of a board link pasted as `url`. */
@@ -87,7 +87,7 @@ class MyBusStopCard extends HTMLElement {
     }
 
     getGridOptions() {
-        return { columns: 12, rows: 8, min_columns: 4, min_rows: 3 };
+        return { columns: 12, rows: 9, min_columns: 4, min_rows: 3 };
     }
 
     _src() {
