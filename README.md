@@ -20,7 +20,9 @@ Anywhere else, arrival times come from [Transitous](https://transitous.org/), a 
 
 ## Install
 
-A step-by-step guide with more detail is at [amirhayek.dev/MyBusStop/home-assistant](https://amirhayek.dev/MyBusStop/home-assistant/).
+[![Open your Home Assistant and add the My Bus Stop card from the Marketplace.](https://my.home-assistant.io/badges/marketplace_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=hayek&repository=my-bus-stop-card&category=plugin)
+
+The button opens your Home Assistant. When it asks to add the repository, select **Add**, then **Install**. The first time, Home Assistant asks you to connect a GitHub account. If the button doesn't get you there, follow the steps below. A step-by-step guide with more detail is at [amirhayek.dev/MyBusStop/home-assistant](https://amirhayek.dev/MyBusStop/home-assistant/).
 
 ### Home Assistant 2026.11 or later (Marketplace)
 
