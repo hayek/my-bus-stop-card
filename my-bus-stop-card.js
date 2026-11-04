@@ -10,7 +10,7 @@
  * MIT licence. https://github.com/hayek/my-bus-stop-card
  */
 
-const CARD_VERSION = '1.0.1';
+const CARD_VERSION = '1.0.2';
 const SITE = 'https://amirhayek.dev/MyBusStop/web/';
 const SITE_ORIGIN = new URL(SITE).origin;
 const BOARD_PATTERN = /^[jz][A-Za-z0-9_-]{8,8000}$/;
@@ -190,6 +190,9 @@ class MyBusStopCardEditor extends HTMLElement {
         const url = new URL(SITE);
         url.searchParams.set('pick', '1');
         url.searchParams.set('theme', this._hass?.themes?.darkMode ? 'dark' : 'light');
+        // A card that has a board opens on its lines, ticked, to change them; Back there picks another stop.
+        const board = boardOf(this._config);
+        if (board && BOARD_PATTERN.test(board)) url.hash = `b=${board}`;
         return url.toString();
     }
 
@@ -227,7 +230,7 @@ class MyBusStopCardEditor extends HTMLElement {
                     sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"></iframe>
                 <p class="note">Pick your region, find your stop, choose up to three lines and press <b>Use these lines</b>.
                     Arrival times come straight from the transit agency to this browser.
-                    <a href="https://github.com/hayek/my-bus-stop-card#readme" target="_blank" rel="noopener">Help</a></p>
+                    <a href="https://amirhayek.dev/MyBusStop/home-assistant/" target="_blank" rel="noopener">Help</a></p>
                 <div class="form"></div>`;
             this._picker = this.shadowRoot.querySelector('.picker');
             // Next turn, so a theme Home Assistant hands over right after this is in the first load.
@@ -252,7 +255,7 @@ class MyBusStopCardEditor extends HTMLElement {
         summary.append('Showing ', strong);
         if (Array.isArray(this._config.lines) && this._config.lines.length) summary.append(` — lines ${this._config.lines.join(', ')}`);
         const hint = document.createElement('small');
-        hint.textContent = 'Choose again below to change it.';
+        hint.textContent = 'Change the lines below, or go back there to choose another stop.';
         summary.append(hint);
     }
 

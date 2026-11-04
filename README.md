@@ -8,9 +8,7 @@ Live arrivals at your bus stop on a Home Assistant dashboard: the next bus in bi
 - **Set up in the card editor.** Pick your region, search for your stop (or find stops near you) and choose up to three lines.
 - **Follows your dashboard's theme.** The card is light or dark to match the dashboard, or you can fix it to one.
 - **Fits any size.** If the card is too short for the map, it shows just the arrival times.
-- **Wall mode.** Opens the board full screen and keeps the screen on, for a tablet on the wall.
-
-[![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=hayek&repository=my-bus-stop-card&category=plugin)
+- **Change it any time.** Edit the card, and the editor opens on your stop with its lines ticked.
 
 ## Where it works
 
@@ -24,10 +22,16 @@ Anywhere else, arrival times come from [Transitous](https://transitous.org/), a 
 
 A step-by-step guide with more detail is at [amirhayek.dev/MyBusStop/home-assistant](https://amirhayek.dev/MyBusStop/home-assistant/).
 
-### With HACS (recommended)
+### Home Assistant 2026.11 or later (Marketplace)
 
-1. Click the button above. Or open **HACS** in Home Assistant, go to the **⋮** menu and choose **Custom repositories**, add `https://github.com/hayek/my-bus-stop-card` with the type **Dashboard**, then search for **My Bus Stop**.
-2. Click **Download**, then reload the browser.
+1. Go to **Settings → Marketplace** and select **Add from link** in the upper-right corner.
+2. Enter `https://github.com/hayek/my-bus-stop-card` and select **Add**. If it asks for the type, choose **Dashboards**.
+3. Select **Install**, check the version, select **Install** again, then reload the browser.
+
+### Home Assistant 2026.10 or earlier (HACS)
+
+1. Open **HACS**, go to the **⋮** menu and choose **Custom repositories**. Add `https://github.com/hayek/my-bus-stop-card` with the type **Dashboard**.
+2. Search for **My Bus Stop**, click **Download**, then reload the browser.
 
 ### By hand
 
